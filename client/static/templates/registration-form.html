@@ -6,24 +6,36 @@
         <form role="form" name="registrationForm" ng-submit="registration.registerUser()">
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{
+                                                      'has-error' : registrationForm.first_name.$invalid && registrationForm.first_name.$touched,
+                                                      'has-success' : registrationForm.first_name.$valid
+                                                      }">
                         <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name" ng-model="registration.firstName" required>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{
+                                                      'has-error' : registrationForm.last_name.$invalid && registrationForm.last_name.$touched,
+                                                      'has-success' : registrationForm.last_name.$valid
+                                                      }">
                         <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name" ng-model="registration.lastName" required>
                     </div>
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" ng-class="{
+                                              'has-error' : registrationForm.email.$invalid && registrationForm.email.$touched,
+                                              'has-success' : registrationForm.email.$valid
+                                              }">
                 <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address" ng-model="registration.emailAddress" required>
             </div>
 
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{
+                                                      'has-error' : registrationForm.password.$invalid && registrationForm.password.$touched,
+                                                      'has-success' : registrationForm.password.$valid
+                                                      }">
                         <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password" ng-model="registration.password" required>
                     </div>
                 </div>

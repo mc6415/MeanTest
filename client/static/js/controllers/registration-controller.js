@@ -4,6 +4,10 @@ app.controller('RegistrationController', ['$resource', function ($resource) {
     
     self.title = "Testing testing 1,2,3"
     
+    self.test = function(){
+        return true
+    }
+    
     self.registerUser = function(){
         var person = {
             firstName:          self.firstName,
@@ -15,7 +19,6 @@ app.controller('RegistrationController', ['$resource', function ($resource) {
         
         if (person.password != person.confirmPassword){
             $('#confirmGroup').addClass('has-error')
-            console.log("You dun goofed")
             self.errorMessage = "Passwords do not match"
             $('#errorPanel').slideDown();
         } else {
