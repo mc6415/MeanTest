@@ -1,5 +1,9 @@
 var User = require('../models/user')
 
+User.find({} , function(results){
+    console.log(results)
+})
+
 module.exports.login = function (req, res) {
     User.find({
         emailAddress: req.body.emailAddress

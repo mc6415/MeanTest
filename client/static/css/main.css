@@ -11,3 +11,11 @@
 #registerSuccess {
     display: none;
 }
+
+#loginForm a {
+    display: none;
+}
+
+#userProfileContainer {
+    display:none;
+}

@@ -4,6 +4,8 @@
     </div>
     <div class="panel-body">
         <form role="form" name="registrationForm" ng-submit="registration.registerUser()">
+
+            <!--            First name and last name row-->
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <div class="form-group" ng-class="{
@@ -23,6 +25,7 @@
                 </div>
             </div>
 
+            <!--            Email row     -->
             <div class="form-group" ng-class="{
                                               'has-error' : registrationForm.email.$invalid && registrationForm.email.$touched,
                                               'has-success' : registrationForm.email.$valid
@@ -30,6 +33,43 @@
                 <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address" ng-model="registration.emailAddress" required>
             </div>
 
+            <!-- Address Line 1 -->
+            <div class="form-group" ng-class="{
+                                              'has-error' : registrationForm.add1.$invalid && registrationForm.add1.$touched,
+                                              'has-success' : registrationForm.add1.$valid
+                                              }">
+                <input type="text" name="add1" id="addressLine1" class="form-control input-sm" placeholder="First Line of Address" ng-model="registration.add1" required>
+            </div>
+
+            <!-- Address Line 2 -->
+            <div class="form-group" ng-class="{
+                                              'has-error' : registrationForm.add2.$invalid && registrationForm.add2.$touched,
+                                              'has-success' : registrationForm.add2.$valid
+                                              }">
+                <input type="text" name="add2" id="addressLine1" class="form-control input-sm" placeholder="Second Line of Address" ng-model="registration.add2" required>
+            </div>
+
+            <!-- County and Postcode -->
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group" ng-class="{
+                                                      'has-error' : registrationForm.county.$invalid && registrationForm.county.$touched,
+                                                      'has-success' : registrationForm.county.$valid
+                                                      }">
+                        <input type="text" name="county" id="county" class="form-control input-sm" placeholder="County" ng-model="registration.county" required>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group" ng-class="{
+                                                      'has-error' : registrationForm.postcode.$invalid && registrationForm.county.$touched,
+                                                      'has-success' : registrationForm.postcode.$valid
+                                                      }">
+                        <input type="text" name="postcode" id="postcode" class="form-control input-sm" placeholder="Postcode" ng-model="registration.postcode" required>
+                    </div>
+                </div>
+            </div>
+
+            <!--            Password and Confirm Password row  -->
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <div class="form-group" ng-class="{
