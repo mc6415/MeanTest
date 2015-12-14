@@ -26,7 +26,7 @@ app.controller('LoginController', ['$resource', '$cookies', function ($resource,
             }
         });
     }
-
+    
     self.logout = function () {
         $cookies.remove('uid')
         location.reload()

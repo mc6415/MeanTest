@@ -7,7 +7,8 @@ app.controller('UserController', ['$cookies', '$resource', function ($cookies, $
             self.account = result;
             $('dropdown-menu').css("display", "inline-block")
             $('#regForm').css("display", "none");
-        })    
+        })
+        $('#chartDiv').fadeIn();
     }
     
     self.date = new Date()
@@ -15,5 +16,10 @@ app.controller('UserController', ['$cookies', '$resource', function ($cookies, $
     self.showProfile = function(){
         $('.jumbotron').slideUp()
         $('#userProfileContainer').fadeIn()
+    }
+    
+    self.hideProfile = function(){
+        $('#userProfileContainer').slideUp()
+        $('.jumbotron').fadeIn()
     }
 }])

@@ -19,3 +19,7 @@
 #userProfileContainer {
     display:none;
 }
+
+.glyphicon {
+    top: 2px;
+}

@@ -1,0 +1,14 @@
+<div class="row" ng-controller="UserController as user">
+    <h1>Welcome {{user.account.firstName}}!</h1>
+</div>
+<div class="row">
+    <div class="col-md-5" style="padding-left:0px">
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+    <div id="chartDiv" class="col-md-offset-6 col-md-6" style="display:none;" ng-controller="ChartController as chart">
+        <canvas id="myChart" width="400" height="400" style="margin-top:-335px"></canvas>
+        <button>{{chart.button}}</button>
+    </div>
+    <registration-home></registration-home>
+</div>

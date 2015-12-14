@@ -23,6 +23,7 @@ app.post('/api/login', controllers.login.login);
 app.post('/api/register', controllers.login.create);
 app.get('/api/user/:id', controllers.user.get);
 
+app.get('/test', controllers.chart.get);
 
 app.listen(3000, function(){
     console.log("server is listening on port 3000")

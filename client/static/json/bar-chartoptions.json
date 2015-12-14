@@ -1,0 +1,170 @@
+{
+  "responsive": true,
+  "responsiveAnimationDuration": 0,
+  "maintainAspectRatio": true,
+  "events": [
+    "mousemove",
+    "mouseout",
+    "click",
+    "touchstart",
+    "touchmove"
+  ],
+  "hover": {
+    "onHover": null,
+    "mode": "label",
+    "animationDuration": 400
+  },
+  "onClick": null,
+  "defaultColor": "rgba(0,0,0,0.1)",
+  "elements": {
+    "arc": {
+      "backgroundColor": "rgba(0,0,0,1)",
+      "borderColor": "#fff",
+      "borderWidth": 2
+    },
+    "line": {
+      "tension": 0.4,
+      "backgroundColor": "rgba(0,0,0,0.1)",
+      "borderWidth": 3,
+      "borderColor": "rgba(0,0,0,0.1)",
+      "borderCapStyle": "butt",
+      "borderDash": [],
+      "borderDashOffset": 0,
+      "borderJoinStyle": "miter",
+      "fill": true
+    },
+    "point": {
+      "radius": 3,
+      "backgroundColor": "rgba(0,0,0,0.1)",
+      "borderWidth": 1,
+      "borderColor": "rgba(0,0,0,0.1)",
+      "hitRadius": 1,
+      "hoverRadius": 4,
+      "hoverBorderWidth": 1
+    },
+    "rectangle": {
+      "backgroundColor": "rgba(135,0,255,0.5)",
+      "borderWidth": 0,
+      "borderColor": "rgba(0,0,0,0.1)"
+    }
+  },
+  "animation": {
+    "duration": 1000,
+    "easing": "easeOutQuart"
+  },
+  "tooltips": {
+    "enabled": true,
+    "custom": null,
+    "mode": "single",
+    "backgroundColor": "rgba(0,0,0,0.8)",
+    "titleFontFamily": "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+    "titleFontSize": 12,
+    "titleFontStyle": "bold",
+    "titleSpacing": 2,
+    "titleMarginBottom": 6,
+    "titleColor": "#fff",
+    "titleAlign": "left",
+    "bodyFontFamily": "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+    "bodyFontSize": 12,
+    "bodyFontStyle": "normal",
+    "bodySpacing": 2,
+    "bodyColor": "#fff",
+    "bodyAlign": "left",
+    "footerFontFamily": "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+    "footerFontSize": 12,
+    "footerFontStyle": "bold",
+    "footerSpacing": 2,
+    "footerMarginTop": 6,
+    "footerColor": "#fff",
+    "footerAlign": "left",
+    "yPadding": 6,
+    "xPadding": 6,
+    "caretSize": 5,
+    "cornerRadius": 6,
+    "xOffset": 10,
+    "multiKeyBackground": "#fff",
+    "callbacks": {}
+  },
+  "scales": {
+    "xAxes": [
+      {
+        "display": true,
+        "gridLines": {
+          "display": true,
+          "color": "rgba(0, 0, 0, 0.1)",
+          "lineWidth": 1,
+          "drawOnChartArea": true,
+          "drawTicks": true,
+          "zeroLineWidth": 1,
+          "zeroLineColor": "rgba(0,0,0,0.25)",
+          "offsetGridLines": true
+        },
+        "scaleLabel": {
+          "fontColor": "#666",
+          "fontFamily": "Helvetica Neue",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "labelString": "",
+          "display": false
+        },
+        "ticks": {
+          "beginAtZero": false,
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontColor": "#666",
+          "fontFamily": "Helvetica Neue",
+          "maxRotation": 90,
+          "minRotation": 20,
+          "mirror": false,
+          "padding": 10,
+          "reverse": false,
+          "display": true
+        },
+        "position": "bottom",
+        "type": "category",
+        "categoryPercentage": 0.8,
+        "barPercentage": 0.9,
+        "id": "x-axis-0"
+      }
+    ],
+    "yAxes": [
+      {
+        "display": true,
+        "gridLines": {
+          "display": true,
+          "color": "rgba(0, 0, 0, 0.1)",
+          "lineWidth": 0,
+          "drawOnChartArea": true,
+          "drawTicks": true,
+          "zeroLineWidth": 1,
+          "zeroLineColor": "rgba(0,0,0,0.25)",
+          "offsetGridLines": false
+        },
+        "scaleLabel": {
+          "fontColor": "#666",
+          "fontFamily": "Helvetica Neue",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "labelString": "",
+          "display": false
+        },
+        "ticks": {
+          "beginAtZero": true,
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontColor": "#666",
+          "fontFamily": "Helvetica Neue",
+          "maxRotation": 90,
+          "minRotation": 20,
+          "mirror": false,
+          "padding": 10,
+          "reverse": false,
+          "display": true
+        },
+        "position": "left",
+        "type": "linear",
+        "id": "y-axis-0"
+      }
+    ]
+  }
+}
