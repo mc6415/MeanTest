@@ -2,6 +2,8 @@ app.controller('LoginController', ['$resource', '$cookies', function ($resource,
     var self = this;
     var Login = $resource('/api/login')
 
+    self.test = "Hello"
+    
     $(document).ready(function () {
         if ($cookies.get('uid') != undefined) {
             $('#loginForm a').css("display", "inline-block")

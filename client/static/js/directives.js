@@ -56,4 +56,11 @@
             templateUrl: '/static/templates/welcome-message.html'
         }
     })
+    
+    app.directive('angularControllers', function(){
+        return{
+            restrict: 'E',
+            templateUrl: '/static/template/angular-controllers.html'
+        }
+    })
 })();
