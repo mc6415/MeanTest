@@ -8,12 +8,12 @@
     </div>
     <div id="chartDiv" class="col-md-offset-6 col-md-6" style="display:none;" ng-controller="ChartController as chart">
         <canvas id="myChart" width="400" height="400" style="margin-top:-335px" ng-controller="ChartSetup"></canvas>
-        <form class="navbar-form navbar-right" role="form" ng-submit="login.login()">
+        <form class="navbar-form navbar-right" role="form" ng-submit="chart.addDataPoint()">
             <div class="form-group">
-                <input type="email" placeholder="Email" class="form-control" ng-model="login.emailAddress" required>
+                <input type="text" placeholder="Label" class="form-control" ng-model="chart.label" required>
             </div>
             <div class="form-group">
-                <input type="password" placeholder="Password" class="form-control" ng-model="login.password" required>
+                <input type="text" placeholder="Value" class="form-control" ng-model="chart.value" required>
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
         </form>

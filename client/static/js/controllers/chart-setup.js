@@ -8,7 +8,6 @@ app.controller('ChartSetup', ['$resource', '$http', function ($resource, $http) 
         Test = $resource('/test');
 
     Test.get(new Test, function (result) {
-        console.log(result);
         $http.get('/static/json/line-chartoptions.json').success(function (data) {
             options = data;
             var data = {
@@ -28,10 +27,8 @@ app.controller('ChartSetup', ['$resource', '$http', function ($resource, $http) 
                     data: data,
                     options: options
                 });
-            console.log(myBarChart.data);
         });
     });
-
 
 
 }]);

@@ -20,3 +20,15 @@ module.exports.get = function(req,res){
         res.json(data)
     })
 }
+
+module.exports.post = function(req,res){
+    var dataPoint = new ChartTest(req.body);
+    
+    dataPoint.save(function(err,result){
+        if(err === null){
+            res.json(result);
+        } else {
+            console.log(err);
+        }
+    })
+}

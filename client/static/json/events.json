@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Test Event",
+        "description": "",
+        "start": "2015-12-25T10:00:00.000Z",
+        "end": "2015-12-27T12:00:00.000Z",
+        "url": "http://www.google.co.uk"
+    },
+    {
+        "title": "Test Event 2",
+        "Description": "It's Happening!",
+        "start": "2015-12-31",
+        "allDay": true,
+        "url": "#"
+    }
+]
